@@ -23,7 +23,7 @@ function KeyPress(){
 
     var body = document.querySelector("body");
     body.onkeydown = function(e){
-        //console.log(e.keyCode);
+        // console.log(e.keyCode);
         switch(e.keyCode){
             case 39:
                 fnRight()

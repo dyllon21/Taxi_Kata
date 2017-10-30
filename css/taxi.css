@@ -585,7 +585,16 @@ body {
 /*signs*/
 
 .signs {
-  position: relative;
+  position:auto;
+  border: solid 1px rgb(72,	182, 131);
+  /*border-radius: 5em;*/
+  padding: 0 1em;
+  text-align: center;
+  /*font-size: 1.5em;*/
+  background-color: rgb(72,	182, 131);
+  color: #000000;
+  left: 25%;
+  right: 25%;
 }
 
 .sign {
@@ -607,7 +616,7 @@ body {
 }
 
 .message {
-  position: absolute;;
+  position: auto;;
   left: 25%;
   right: 25%;
   border: solid 2px rgb(72,	182, 131);

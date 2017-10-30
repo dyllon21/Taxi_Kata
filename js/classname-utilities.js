@@ -42,3 +42,4 @@ function trafficLightLocation(counter){
         case 9:
             return ".nine-of-nine";
     }
+  };
