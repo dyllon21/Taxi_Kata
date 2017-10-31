@@ -1,17 +1,15 @@
-// module.exports = reuire('js');{
-// var button = document.querySelector('#directions').innerHTML;
-// var Keypress = module.exports('keypress.js');
-var counter = 0;
+var taxi = new Taxi();
+var body = document.querySelector("body");
 
-var number = document.querySelector('.number');
-number.innerHTML = counter;
+body.onkeydown = function(e) {
 
-function interval() {
-  number.innerHTML = counter++;
+  if (e.keyCode == 39) {
+    var robots = taxi.closestTrafficLight();
 
-  if (counter === 5) {
-    this.up();
+    if (robots.currentColor() == 'green') {
+
+      taxi.forward();
+    }
   }
+
 }
-// }
-    setInterval(interval, 500);
