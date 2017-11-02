@@ -444,7 +444,7 @@ body {
 }
 
 .wheels {
-  position: relative;
+  position:relative;
 }
 
 .wheels:before {
@@ -453,10 +453,12 @@ body {
   left: 0;
   bottom: -0.65em;
   color: black;
+  border-radius: 15em;
   font-size: 6em;
 }
 
 .wheels:after {
+  border-radius: 20em;
   content: "•";
   position: absolute;
   right: 0;
