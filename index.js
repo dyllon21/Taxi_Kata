@@ -6,11 +6,7 @@ body.onkeydown = function(e) {
   if (e.keyCode === 39) {
     var robots = taxi.closestTrafficLight();
     if (robots.currentColor() !== "red") {
-      // robots.makeGreen();
       taxi.forward();
-    // }else{
-    //   robots.makeOrange();
-    //
     }
   }
   if (e.keyCode === 37) {
@@ -19,6 +15,7 @@ body.onkeydown = function(e) {
       taxi.reverse();
     }
   }
+
    else if (e.keyCode === 38) {
     var robots = taxi.closestTrafficLight();
 
